@@ -3,16 +3,16 @@
 <% @fruits.each do |fruit| %>
   <ul>
     <div class="fruit">
-      <h4><p class="name"> Name: <%= fruit.name %> </p></h4>
-      <p class="family"> Family: <%= fruit.family %></p>
-      <p class="family"> Order: <%= fruit.order %></p>
-      <p class="family"> genus: <%= fruit.genus %></p>
-      Nutrition: <br>
-      <p class="nutrition"> Nutrition: <%= fruit.nutrition[:calories] %></p>
-      <p class="nutrition"> Fat: <%= fruit.nutrition[:fat] %></p>
-      <p class="nutrition"> Sugar: <%= fruit.nutrition[:sugar] %></p>
-      <p class="nutrition"> Carbohydrates: <%= fruit.nutrition[:carbohydrates] %></p>
-      <p class="nutrition"> Protein: <%= fruit.nutrition[:protein] %></p>
+      <h3><p class="name"> <%= fruit[:name] %> </p></h3>
+      <p class="family"> Family: <%= fruit[:family] %></p>
+      <p class="order"> Order: <%= fruit[:order] %></p>
+      <p class="genus"> genus: <%= fruit[:genus] %></p>
+      <h4> Nutrition: </h4>
+      <p class="nutrition"> Calories: <%= fruit[:nutritions][:calories] %></p>
+      <p class="nutrition"> Fat: <%= fruit[:nutritions][:fat] %></p>
+      <p class="nutrition"> Sugar: <%= fruit[:nutritions][:sugar] %></p>
+      <p class="nutrition"> Carbohydrates: <%= fruit[:nutritions][:carbohydrates] %></p>
+      <p class="nutrition"> Protein: <%= fruit[:nutritions][:protein] %></p>
       <br>
     </div>
   </ul>

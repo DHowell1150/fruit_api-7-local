@@ -19,6 +19,7 @@ RSpec.describe "user can search fruit by name" do
       expect(current_path).to eq(fruits_path)
 
       within '.fruit' do
+        save_and_open_page
         expect(page).to have_css(".name")
         expect(page).to have_css(".family")
         expect(page).to have_css(".order")
