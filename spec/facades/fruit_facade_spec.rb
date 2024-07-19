@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe FruitFacade do 
     it "exists and has attributes" do 
-    search = "Banana"
+    search = "banana"
     result = FruitFacade.searched_fruit(search)
     fruit = result.first
     expect(result).to be_a(Array)
